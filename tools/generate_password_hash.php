@@ -1,0 +1,1 @@
+<?php if ($argc<2) { echo "Usage: php generate_password_hash.php mypassword\n"; exit; } echo password_hash($argv[1], PASSWORD_DEFAULT)."\n"; ?>
