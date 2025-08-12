@@ -1,0 +1,6 @@
+# Protect inc folder
+<IfModule mod_authz_core.c>
+  <FilesMatch "^(config|db|auth)\.php$">
+    Require all denied
+  </FilesMatch>
+</IfModule>
